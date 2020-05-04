@@ -5,28 +5,60 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 
-public class ImagesUpload {
-    @SerializedName("confidence")
-    @Expose
-    private String confidence;
+@SerializedName("status")
+@Expose
+private String status;
+@SerializedName("code")
+@Expose
+private String code;
+@SerializedName("success")
+@Expose
+private Boolean success;
+@SerializedName("message")
+@Expose
+private String message;
+@SerializedName("data")
+@Expose
+private Data data;
 
-    @SerializedName("error")
-    @Expose
-    private String msg;
+public String getStatus() {
+return status;
+}
 
-    public String getConfidence() {
-        return confidence;
-    }
+public void setStatus(String status) {
+this.status = status;
+}
 
-    public void setConfidence(String confidence) {
-        this.confidence = confidence;
-    }
+public String getCode() {
+return code;
+}
 
-    public String getMsg() {
-        return msg;
-    }
+public void setCode(String code) {
+this.code = code;
+}
 
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
+public Boolean getSuccess() {
+return success;
+}
+
+public void setSuccess(Boolean success) {
+this.success = success;
+}
+
+public String getMessage() {
+return message;
+}
+
+public void setMessage(String message) {
+this.message = message;
+}
+
+public Data getData() {
+return data;
+}
+
+public void setData(Data data) {
+this.data = data;
+}
+
 }
